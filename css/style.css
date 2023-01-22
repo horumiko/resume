@@ -4,8 +4,7 @@
     --main-color: #003f5c;
     --bg-color: #ffffff;
     --text-color: #2d2d2d;
-    --hover: #dfe7f4;
-
+    --hover: #FFA500;
     --b-font: 3.2rem;
     --m-font: 1.8rem;
     --p-font: 0.941rem;
@@ -84,6 +83,7 @@ section{
 }
 .social-media a:hover {
     color: var(--hover);
+    transition: color 0.3s ease-in-out;
 }
 .btn {
     display: inline-block;
@@ -91,9 +91,11 @@ section{
     color: #fff;
     padding: 0.7rem 1.3rem;
     border-radius: 0.5rem;
+    transition: color 0.3s ease-in-out;
 }
 .btn:hover {
     background: var(--hover);
+    transition: color 0.3s ease-in-out;
 }
 
 header {
@@ -126,6 +128,7 @@ header.shadow {
 }
 .navbar a:hover {
     color: var(--hover);
+    transition: color 0.3s ease-in-out;
 }
 #menu-icon {
     font-size: 24px;
@@ -230,5 +233,70 @@ span {
 .fluttern-bar{
     width: 20%;
 }
+.edu-container{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.education_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 68px;
+}
 
+.education_list a {
+    transition: color 0.3s ease-in-out;
+}
 
+.education_list a:hover {
+    color: var(--hover);
+    border-color: var(--hover);
+    transition: color 0.3s ease-in-out,
+    border-color 0.3s ease-in-ouT;
+}
+
+.education_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    column-gap: 28px;
+    position: relative;
+}
+
+.education_item:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color);
+    bottom: -34px;
+}
+
+.education a {
+    display: inline;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color);
+    position: relative;
+    line-height: 1.2;
+}
+
+.education_year {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.education_title {
+    font-size: 24px;
+}
+.footer {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: #ebebeb;
+    color: #000;
+}
+.footer h2 {
+    font-size: 1.3rem;
+
+}
