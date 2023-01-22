@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -325,7 +326,16 @@ span {
 .footer h2 {
     font-size: var(--m-font);
 }
-
+.slider-container {
+    height: 100vh;
+    display: inline-flex;
+    overflow: hidden;
+    scrollbar-width: none;
+    transform: translateX(0);
+    will-change: transform;
+    transition: transform 0.3s ease-out;
+    cursor: grab;
+}
 @media (max-width: 991px) {
     header {
         padding: 18px 4%;
@@ -475,4 +485,97 @@ span {
         font-size: 0.9rem;
         font-weight: 500;
     }
+}
+
+.slider-container
+{
+    margin: 10px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 80vw;
+    height: 80vh;
+}
+.slider-container > img
+{
+    position: absolute;
+    transition: all 1s;
+    width: 80vw;
+    height: 80vh;
+    opacity: 0;
+}
+.slider-container img.active
+{
+    opacity: 1;
+    left: 0;
+}
+
+.slider-container .slide-number
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+    border-radius: 5px;
+}
+.slider-control span,
+.slider-container .slide-number
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: var(--m-font);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.slider-control
+{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-control .disabled
+{
+    background-color: gray;
+    cursor: no-drop;
+}
+
+
+.slider-control .indicators
+{
+    display: flex;
+    align-items: center;
+}
+
+.slider-control .indicators ul
+{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+.slider-control .indicators ul li
+{
+    display: inline-block;
+    background-color: lightgray;
+    color: #333;
+    font-weight: bold;
+    border-radius: 5%;
+    margin: 0 2px;
+    cursor: pointer;
+    line-height:25px;
+    width:25px;
+    height: 25px;
+    font-size: 20px;
+}
+.slider-control .indicators ul li.active
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.memes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
