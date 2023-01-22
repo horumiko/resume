@@ -135,5 +135,39 @@ header.shadow {
     font-size: 22px;
     cursor: pointer;
 }
+.heading {
+    text-align: center;
+}
+.heading h2 {
+    font-size: 30px;
+}
+
+.heading span {
+    font-size: var(--p-font);
+    color: rgb(2, 166, 70);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    align-content: center;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+.about-text{
+    display: flex;
+    align-items: center;
+}
+.about-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+}
+
 
 
