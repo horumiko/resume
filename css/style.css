@@ -45,7 +45,7 @@ section{
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 0.97fr;
     align-items: center;
     gap: 1rem;
 }
