@@ -226,7 +226,7 @@ span {
     width: 60%;
 }
 .agile-bar{
-    width: 70%;
+    width: 40%;
 }
 .excel-bar{
     width: 70%;
@@ -284,6 +284,61 @@ span {
 
 .education_title {
     font-size: var(--m-font);
+}
+.edu-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 10px;
+}
+
+.skill-oval {
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+.custdev {
+    border: 2px solid #1E90FF;
+
+}
+
+.market {
+    border: 2px solid #228B22;
+
+}
+
+.invision {
+    border: 2px solid #FFA500;
+
+}
+
+.mvp {
+    border: 2px solid #9400D3;
+
+}
+
+.jira {
+    border: 2px solid #8B0000;
+}
+
+.unit {
+    border: 2px solid #2F4F4F;
+}
+
+.js{
+    border: 2px solid #e6da38;
+}
+.algorithms{
+    border: 2px solid #e65238;
+}
+.english{
+    border: 2px solid #3be638
 }
 .facts{
     display: grid;
